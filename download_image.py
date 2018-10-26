@@ -114,6 +114,8 @@ def saveDatabase(Database):
 def main():
     mkdir(imgpath)
     mkdir(tmppath)
+    mkdir('./choose_video_want_to_download/')
+    mkdir('./video/')
     url,PageNum,ThreadNum = getparser()
     print('PageNum:',PageNum,' ThreadNum:',ThreadNum,' VideoNum:',PageNum*20)
     runspider(url,PageNum,ThreadNum)
